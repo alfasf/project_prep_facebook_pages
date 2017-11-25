@@ -3,6 +3,11 @@
   margin: 0;
   font-family: 'Dekko', cursive; }
 
+.container {
+  display: flex;
+  margin-top: 1.75%;
+  align-items: flex-start; }
+
 /* Header */
 header {
   background: #2a71ec;
@@ -31,47 +36,24 @@ form {
 .blockmainform {
   display: inline-block; }
 
-/* Main container*/
-.container {
-  display: flex;
-  margin-top: 1.75%;
-  align-items: flex-start; }
-
-aside {
-  width: 50%;
-  padding: 5% 0;
-  align-self: center; }
-
-aside h1 {
-  text-align: center;
-  font-size: 2.2rem; }
-
-.list-items {
-  width: 75%;
-  margin: 0 auto;
-  font-size: 20px; }
-
-.list-items ul {
-  margin-left: 100px;
-  line-height: 2.5;
-  list-style-position: inside;
-  font-weight: bold;
-  opacity: 0.6; }
-
-.fadeWords {
-  font-weight: normal;
-  opacity: 0.9; }
-
 /*Section & Body Forms*/
 section {
   margin: 0 auto; }
 
 fieldset {
   border: 0; }
-
-fieldset form {
-  width: 100%;
-  margin: 0; }
+  fieldset form {
+    width: 100%;
+    margin: 0; }
+    fieldset form input[type="email"], fieldset form input[type="text"], fieldset form input[type="password"] {
+      margin-bottom: 15px; }
+    fieldset form input:placeholder-shown {
+      padding-left: 8px;
+      font-size: 1.2rem; }
+    fieldset form select {
+      font-size: 1.08rem;
+      margin-right: 15px;
+      margin-bottom: 5px; }
 
 legend {
   font-size: 2.5rem;
@@ -91,20 +73,8 @@ legend {
   display: block;
   width: 100%; }
 
-fieldset form input[type="email"], input[type="text"], input[type="password"] {
-  margin-bottom: 15px; }
-
-fieldset form input:placeholder-shown {
-  padding-left: 8px;
-  font-size: 1.2rem; }
-
-fieldset form select {
-  font-size: 1.08rem;
-  margin-right: 15px;
-  margin-bottom: 5px; }
-
 .genderSelection {
-  display: block;
+  display: inline;
   margin: 10px 0;
   font-size: 1.08rem; }
 
@@ -114,5 +84,28 @@ fieldset form select {
   font-size: 1.85rem;
   color: #fff;
   background: #129012; }
+
+aside {
+  width: 50%;
+  padding: 5% 0;
+  align-self: center; }
+  aside h1 {
+    text-align: center;
+    font-size: 2.2rem; }
+
+.list-items {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 20px; }
+  .list-items ul {
+    margin-left: 100px;
+    line-height: 2.5;
+    list-style-position: inside;
+    font-weight: bold;
+    opacity: 0.6; }
+
+.fadeWords {
+  font-weight: normal;
+  opacity: 0.9; }
 
 /*# sourceMappingURL=main.css.map */
