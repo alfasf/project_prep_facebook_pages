@@ -1,0 +1,44 @@
+/* Header */
+header{
+	background: $mainBlue;
+	padding: 2%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	color: white;
+	
+	h1{
+	align-self: center;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+    }
+}
+
+form{
+	margin: 0 15.8rem;
+	font-size: 1.125rem;
+	
+	label{
+    	display: inherit;
+    	margin: 0 10px;
+	
+    	input{
+    	    display: block;
+        }
+        
+        input[type="submit"]{
+        	background: $paleBlue;
+        	font-weight: bold;
+        }
+	
+    }
+}
+
+
+.blockmainform{
+	display: inline-block;
+}
+
+
+
+
