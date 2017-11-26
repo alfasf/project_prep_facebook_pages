@@ -20,10 +20,35 @@ header {
     align-self: center;
     font-size: 2.5rem;
     letter-spacing: 3px; }
+  header.reset-header {
+    padding: 0; }
+    header.reset-header .headercontainer {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      margin: 0 auto; }
+      header.reset-header .headercontainer .nameIdentity {
+        font-size: 1.15rem; }
+      header.reset-header .headercontainer .brand {
+        display: inline-flex; }
+        header.reset-header .headercontainer .brand .logo {
+          width: 35px;
+          height: 0%;
+          margin-right: 10px;
+          align-self: center; }
 
 form {
   margin: 0 15.8rem;
   font-size: 1.125rem; }
+  form #searchform {
+    margin-left: 25px;
+    width: 50%;
+    align-self: flex-end; }
+    form #searchform #search {
+      width: 100%;
+      text-align: left; }
+      form #searchform #search input:placeholder-shown {
+        padding-left: 3px; }
   form label {
     display: inherit;
     margin: 0 10px; }
